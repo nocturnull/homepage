@@ -24,7 +24,11 @@ $text-color: rgb(34, 34, 34) !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$brand-color: rgb(37, 150, 190) !default;
+
+/// Secondary brand color
+/// @type Color
+$secondary-color: rgb(50, 51, 61) !default;
 
 /// Light grey
 /// @type Color
@@ -68,4 +72,4 @@ $breakpoints: (
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'https://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+$base-url: '/' !default;

@@ -1,5 +1,5 @@
 <template>
-  <div id="page-wrapper">
+  <div>
     <Header/>
     <slot />
     <Footer/>

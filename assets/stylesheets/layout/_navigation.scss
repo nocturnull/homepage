@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as *;
+
+// -----------------------------------------------------------------------------
+// This file contains navigation styles.
+// -----------------------------------------------------------------------------
+.navigation {
+  width: 100%;
+  display: inline-grid;
+  justify-items: end;
+  padding: 0 2em;
+  position: absolute;
+  right: 0;
+}
+
+.navigation-items {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+}
+
+.navigation-item {
+  list-style-type: none;
+  a {
+    color: $light-grey;
+  }
+  position: relative;
+
+  &:hover > .navigation-sub {
+    display: block;
+  }
+}
+
+.navigation-sub {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 1em;
+  padding: 0;
+  margin-top: 10px;
+}

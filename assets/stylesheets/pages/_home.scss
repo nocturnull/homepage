@@ -1,3 +1,26 @@
+@use '../abstracts/variables' as *;
+@use '../layout/grid';
+
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.intro {
+  @extend .grid;
+  background-color: $secondary-color;
+  min-height: 100vh;
+  color: $light-grey;
+  align-items: center;
+}
+
+.intro-title {
+  grid-column: 3 / 6;
+}
+
+.intro-profile {
+  grid-column: 6;
+  height: 250px;
+
+  img {
+    border-radius: 50%;
+  }
+}

@@ -11,7 +11,9 @@
 
 // 3. Layout-related sections
 @use 'layout/footer';
+@use 'layout/grid';
 @use 'layout/header';
+@use 'layout/navigation';
 
 // 4. Components
 @use 'components/button';
