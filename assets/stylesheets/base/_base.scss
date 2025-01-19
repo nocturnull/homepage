@@ -27,7 +27,7 @@ html {
  * Basic styles for links
  */
 a {
-  color: abstracts.$brand-color;
+  color: abstracts.$light-grey;
   text-decoration: none;
 
   @include abstracts.on-event {

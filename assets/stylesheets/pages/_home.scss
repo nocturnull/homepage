@@ -14,6 +14,13 @@
   align-items: center;
 }
 
+.home-title {
+  text-align: center;
+  margin: 0;
+  height: 120px;
+  padding-top: 30px;
+}
+
 .home-introTitle {
   grid-column: 3 / span 2;
 }
@@ -30,17 +37,11 @@
   background-color: $light-grey;
 }
 
-.home-workTitle {
-  text-align: center;
-  margin: 0;
-  height: 120px;
-  padding-top: 20px;
-}
-
 .home-workEntry {
   display: inline-grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
+  margin: 20px 0;
 
   &:nth-child(2n) {
     justify-items: end;
@@ -48,6 +49,26 @@
   }
 }
 
+.home-skills {
+  margin-bottom: 100px;
+}
+
+.home-skillEntryTitle {
+  display: inline-grid;
+  grid-template-columns: 50px auto;
+  align-items: center;
+}
+
 .home-workEntryDescription {
   grid-column: span 3;
+}
+
+.home-skillEntries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-skillEntry {
+  border: 1px solid $mid-grey;
+  padding: 5px 15px 25px;
 }

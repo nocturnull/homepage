@@ -2,6 +2,8 @@
 
 // 1. Vendors
 @use 'vendors/normalize';
+@use 'vendors/fontawesome/fontawesome.min';
+@use 'vendors/fontawesome/all.min';
 
 // 2. Base stuff
 @use 'base/base';
@@ -17,6 +19,7 @@
 
 // 4. Components
 @use 'components/button';
+@use 'components/icon-cover';
 
 // 5. Pages
 @use 'pages/home';

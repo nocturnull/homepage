@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the icon cover component.
+// -----------------------------------------------------------------------------
+
+.icon-cover {
+  background-color: $brand-color;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  &::before {
+    left: 8px;
+    top: 11px;
+    position: relative;
+  }
+}
+
+.icon-cover-small {
+  &::before {
+    left: 13px;
+  }
+}

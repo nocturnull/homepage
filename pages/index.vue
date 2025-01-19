@@ -12,7 +12,7 @@
 
     <section class="home-work">
       <div class="container">
-        <h2 class="home-workTitle">Work</h2>
+        <h2 class="home-title">Work</h2>
 
         <div>
           <div class="home-workEntry">
@@ -57,5 +57,52 @@
         </div>
       </div>
     </section>
+
+    <section class="home-skills">
+      <div class="container">
+        <h2 class="home-title">Skills</h2>
+
+        <div class="home-skillEntries">
+          <div class="home-skillEntry">
+            <div class="home-skillEntryTitle">
+              <span class="fa-solid fa-code icon-cover"></span>
+              <h3>Software Development</h3>
+            </div>
+            <div>
+              Burgdoggen sirloin chislic meatball swine bresaola picanha turducken bacon hamburger pig jowl.
+            </div>
+          </div>
+          <div class="home-skillEntry">
+            <div class="home-skillEntryTitle">
+              <span class="fa-brands fa-html5 icon-cover icon-cover-small"></span>
+              <h3>Web Development</h3>
+            </div>
+            <div>
+              Burgdoggen sirloin chislic meatball swine bresaola picanha turducken bacon hamburger pig jowl.
+            </div>
+          </div>
+          <div class="home-skillEntry">
+            <div class="home-skillEntryTitle">
+              <span class="fa-solid fa-cloud icon-cover"></span>
+              <h3>Server Infrastructure</h3>
+            </div>
+            <div>
+              Burgdoggen sirloin chislic meatball swine bresaola picanha turducken bacon hamburger pig jowl.
+            </div>
+          </div>
+          <div class="home-skillEntry">
+            <div class="home-skillEntryTitle">
+              <span class="fa-solid fa-person icon-cover icon-cover-small"></span>
+              <h3>Team Leading</h3>
+            </div>
+            <div>
+              Burgdoggen sirloin chislic meatball swine bresaola picanha turducken bacon hamburger pig jowl.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
+<script setup lang="ts">
+</script>

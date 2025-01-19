@@ -1,3 +1,23 @@
+@use '../abstracts/variables' as *;
+
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.footer {
+  background-color: $secondary-color;
+  color: white;
+  min-height: 20vh;
+}
+
+.footer-info {
+  display: grid;
+  grid-template: minmax(100px, 1fr) 1fr / auto;
+  place-items: center;
+}
+
+.footer-connect {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
