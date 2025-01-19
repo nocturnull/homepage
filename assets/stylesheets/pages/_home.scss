@@ -1,26 +1,53 @@
 @use '../abstracts/variables' as *;
+@use '../base/helpers';
 @use '../layout/grid';
 
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.intro {
-  @extend .grid;
+.home-intro {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   background-color: $secondary-color;
   min-height: 100vh;
   color: $light-grey;
   align-items: center;
 }
 
-.intro-title {
-  grid-column: 3 / 6;
+.home-introTitle {
+  grid-column: 3 / span 2;
 }
 
-.intro-profile {
-  grid-column: 6;
+.home-introProfile {
   height: 250px;
 
   img {
     border-radius: 50%;
   }
+}
+
+.home-work {
+  background-color: $light-grey;
+}
+
+.home-workTitle {
+  text-align: center;
+  margin: 0;
+  height: 120px;
+  padding-top: 20px;
+}
+
+.home-workEntry {
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+
+  &:nth-child(2n) {
+    justify-items: end;
+    text-align: right;
+  }
+}
+
+.home-workEntryDescription {
+  grid-column: span 3;
 }

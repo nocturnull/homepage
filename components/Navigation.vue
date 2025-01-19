@@ -6,7 +6,9 @@
         <a href="#">Work</a>
         <ul class="navigation-sub">
           <li><a href="#">ONDA</a></li>
+          <li><a href="#">Heartware Korea</a></li>
           <li><a href="#">Cheritz</a></li>
+          <li><a href="#">KPOP United</a></li>
         </ul>
       </li>
       <li class="navigation-item">
