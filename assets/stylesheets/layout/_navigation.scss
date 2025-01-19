@@ -4,7 +4,8 @@
 // This file contains navigation styles.
 // -----------------------------------------------------------------------------
 .navigation {
-  width: 100%;
+  width: 100vw;
+  background-color: $secondary-color;
   display: inline-grid;
   justify-items: end;
   padding: 0 2em;

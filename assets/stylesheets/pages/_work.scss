@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as *;
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the work pages.
+// -----------------------------------------------------------------------------
+
+.work-intro {
+  display: grid;
+  grid-template: [padding] 15% [title] 60px [description] 100px [poster] auto [padding] 15% / auto;
+  background-color: $dark-grey;
+  min-height: 100vh;
+  color: $light-grey;
+  place-items: center;
+}
+
+.work-title {
+  grid-row: title;
+}
+
+.work-description {
+  grid-row: description;
+}
+
+.work-poster {
+  grid-row: poster;
+}
