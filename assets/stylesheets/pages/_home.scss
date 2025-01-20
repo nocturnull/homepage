@@ -19,6 +19,15 @@
   margin: 0;
   height: 120px;
   padding-top: 30px;
+
+  &::after {
+    background: $brand-color;
+    width: 100px;
+    height: 0.1em;
+    content: '';
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .home-introTitle {
@@ -26,27 +35,44 @@
 }
 
 .home-introProfile {
-  height: 250px;
-
-  img {
-    border-radius: 50%;
-  }
+  border-radius: 50%;
+  width: 400px;
 }
 
 .home-work {
   background-color: $light-grey;
+  padding-bottom: 50px;
 }
 
 .home-workEntry {
+  width: 100%;
   display: inline-grid;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   align-items: center;
   margin: 20px 0;
+}
 
-  &:nth-child(2n) {
-    justify-items: end;
-    text-align: right;
+.home-workEntry-alpha {
+  @extend .home-workEntry;
+  grid-template-columns: [image] 250px [description] auto;
+}
+
+.home-workEntry-beta {
+  @extend .home-workEntry;
+  grid-template-columns: [description] auto [image] 250px;
+  justify-items: end;
+  text-align: right;
+}
+
+.home-workEntryImage {
+  grid-area: image;
+  img {
+    width: 250px;
   }
+}
+
+.home-workEntryDescription {
+  grid-area: description;
 }
 
 .home-skills {
@@ -57,10 +83,6 @@
   display: inline-grid;
   grid-template-columns: 50px auto;
   align-items: center;
-}
-
-.home-workEntryDescription {
-  grid-column: span 3;
 }
 
 .home-skillEntries {

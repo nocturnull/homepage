@@ -5,9 +5,7 @@
         <h1>{{ t('home.intro.title') }}</h1>
         <p>{{ t('home.intro.description') }}</p>
       </div>
-      <div class="home-introProfile">
-        <img src="https://placehold.co/250" width="250" alt="Profile Pic" />
-      </div>
+      <img class="home-introProfile" src="/images/home/profile-pic.jpeg" alt="Profile Pic" />
     </section>
 
     <section class="home-work">
@@ -15,36 +13,44 @@
         <h2 class="home-title">Work</h2>
 
         <div>
-          <div class="home-workEntry">
-            <img class="home-workEntryImage" src="https://placehold.co/250" width="250" alt="Work Entry" />
+          <div class="home-workEntry-alpha">
+            <NuxtLink class="home-workEntryImage" :to="localePath('/work/onda')">
+              <img src="/images/home/onda-logo.jpeg" alt="Work Entry" />
+            </NuxtLink>
             <div class="home-workEntryDescription">
               <h3>ONDA</h3>
               <p>{{ t('home.work.onda.description') }}</p>
             </div>
           </div>
 
-          <div class="home-workEntry">
+          <div class="home-workEntry-beta">
             <div class="home-workEntryDescription">
               <h3>Heartware Korea</h3>
               <p>{{ t('home.work.heartware-korea.description') }}</p>
             </div>
-            <img class="home-workEntryImage" src="https://placehold.co/250" width="250" alt="Work Entry" />
+            <NuxtLink class="home-workEntryImage" :to="localePath('/work/heartware-korea')">
+              <img src="/images/home/heartware-korea-logo.png" alt="Work Entry" />
+            </NuxtLink>
           </div>
 
-          <div class="home-workEntry">
-            <img class="home-workEntryImage" src="https://placehold.co/250" width="250" alt="Work Entry" />
+          <div class="home-workEntry-alpha">
+            <NuxtLink class="home-workEntryImage" :to="localePath('/work/cheritz')">
+              <img src="/images/home/cheritz-logo.jpg" alt="Work Entry" />
+            </NuxtLink>
             <div class="home-workEntryDescription">
               <h3>Cheritz</h3>
               <p>{{ t('home.work.cheritz.description') }}</p>
             </div>
           </div>
 
-          <div class="home-workEntry">
+          <div class="home-workEntry-beta">
             <div class="home-workEntryDescription">
               <h3>KPOP United</h3>
               <p>{{ t('home.work.kpop-united.description') }}</p>
             </div>
-            <img class="home-workEntryImage" src="https://placehold.co/250" width="250" alt="Work Entry" />
+            <NuxtLink class="home-workEntryImage" :to="localePath('/work/kpop-united')">
+              <img src="/images/home/kpop-united-logo.jpg" alt="Work Entry" />
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -88,6 +94,9 @@
     </section>
   </div>
 </template>
+
 <script setup lang="ts">
 const { t } = useI18n();
+import { useLocalePath } from '#imports';
+const localePath = useLocalePath();
 </script>

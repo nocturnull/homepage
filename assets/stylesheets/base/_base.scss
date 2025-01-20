@@ -27,11 +27,11 @@ html {
  * Basic styles for links
  */
 a {
-  color: abstracts.$light-grey;
+  color: abstracts.$brand-color;
   text-decoration: none;
 
   @include abstracts.on-event {
-    color: abstracts.$text-color;
+    color: abstracts.$light-grey;
     text-decoration: underline;
   }
 }
