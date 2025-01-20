@@ -52,14 +52,18 @@
   margin: 20px 0;
 }
 
+.home-workEntryRole {
+  color: $mid-grey;
+}
+
 .home-workEntry-alpha {
   @extend .home-workEntry;
-  grid-template-columns: [image] 250px [description] auto;
+  grid-template-columns: [image] 300px [description] auto;
 }
 
 .home-workEntry-beta {
   @extend .home-workEntry;
-  grid-template-columns: [description] auto [image] 250px;
+  grid-template-columns: [description] auto [image] 300px;
   justify-items: end;
   text-align: right;
 }
@@ -67,7 +71,7 @@
 .home-workEntryImage {
   grid-area: image;
   img {
-    width: 250px;
+    width: 300px;
   }
 }
 

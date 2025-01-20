@@ -5,7 +5,7 @@
         <h1>{{ t('home.intro.title') }}</h1>
         <p>{{ t('home.intro.description') }}</p>
       </div>
-      <img class="home-introProfile" src="/images/home/profile-pic.jpeg" alt="Profile Pic" />
+      <img class="home-introProfile" src="/images/home/profile-pic.png" alt="Profile Pic" />
     </section>
 
     <section class="home-work">
@@ -20,6 +20,7 @@
             <div class="home-workEntryDescription">
               <h3>ONDA</h3>
               <p>{{ t('home.work.onda.description') }}</p>
+              <p class="home-workEntryRole">{{ t('home.work.onda.role') }}</p>
             </div>
           </div>
 
@@ -27,6 +28,7 @@
             <div class="home-workEntryDescription">
               <h3>Heartware Korea</h3>
               <p>{{ t('home.work.heartware-korea.description') }}</p>
+              <p class="home-workEntryRole">{{ t('home.work.heartware-korea.role') }}</p>
             </div>
             <NuxtLink class="home-workEntryImage" :to="localePath('/work/heartware-korea')">
               <img src="/images/home/heartware-korea-logo.png" alt="Work Entry" />
@@ -40,6 +42,7 @@
             <div class="home-workEntryDescription">
               <h3>Cheritz</h3>
               <p>{{ t('home.work.cheritz.description') }}</p>
+              <p class="home-workEntryRole">{{ t('home.work.cheritz.role') }}</p>
             </div>
           </div>
 
@@ -47,6 +50,7 @@
             <div class="home-workEntryDescription">
               <h3>KPOP United</h3>
               <p>{{ t('home.work.kpop-united.description') }}</p>
+              <p class="home-workEntryRole">{{ t('home.work.kpop-united.role') }}</p>
             </div>
             <NuxtLink class="home-workEntryImage" :to="localePath('/work/kpop-united')">
               <img src="/images/home/kpop-united-logo.jpg" alt="Work Entry" />

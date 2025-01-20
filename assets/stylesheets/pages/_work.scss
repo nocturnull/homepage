@@ -13,6 +13,15 @@
   place-items: center;
 }
 
+.work-poster {
+  grid-row: poster;
+  width: 400px;
+}
+
+.work-contents {
+  margin-bottom: 50px;
+}
+
 .work-project {
   margin: 50px 0;
 }
@@ -25,7 +34,6 @@
   grid-row: description;
 }
 
-.work-poster {
-  grid-row: poster;
-  width: 400px;
+.work-projectImage {
+  max-width: 750px;
 }

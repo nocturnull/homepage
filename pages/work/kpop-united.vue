@@ -3,14 +3,16 @@
     <div class="work-intro">
       <h1 class="work-title">KPOP United</h1>
       <p class="work-description">{{ t('work.kpop-united.description') }}</p>
-      <img class="work-poster" src="https://placehold.co/600x400" width="600" alt="Title Image" />
+      <img class="work-poster" src="/images/home/kpop-united-logo.jpg" alt="Title Image" />
     </div>
 
     <div class="work-contents">
       <section class="container">
-        <h2>Project A</h2>
-        <p>{{ t('work.kpop-united.contents1') }}</p>
-        <p>{{ t('work.kpop-united.contents2') }}</p>
+        <h2>{{ t('work.kpop-united.project.1') }}</h2>
+        <p>{{ t('work.kpop-united.project.1.contents.1') }}</p>
+        <p>{{ t('work.kpop-united.project.1.contents.2') }}</p>
+        <p>{{ t('work.kpop-united.project.1.contents.3') }}</p>
+        <img class="work-projectImage" src="/images/work/kpop-united/krowdpop.png" alt="Krowdpop"/>
       </section>
     </div>
   </div>
