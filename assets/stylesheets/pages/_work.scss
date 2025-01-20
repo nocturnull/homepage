@@ -13,6 +13,10 @@
   place-items: center;
 }
 
+.work-project {
+  margin: 50px 0;
+}
+
 .work-title {
   grid-row: title;
 }
@@ -23,4 +27,5 @@
 
 .work-poster {
   grid-row: poster;
+  width: 400px;
 }
