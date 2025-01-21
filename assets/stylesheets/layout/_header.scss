@@ -1,9 +1,12 @@
+@use '../abstracts/variables' as *;
+
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
 .header {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
+  box-shadow: 0 8px 6px -6px black;
 }

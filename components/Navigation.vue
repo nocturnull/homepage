@@ -12,7 +12,10 @@
         </ul>
       </li>
       <li class="navigation-item">
-        <a href="/">Language</a>
+        <a href="/">
+          <span class="fa-solid fa-globe"></span>
+          Language
+        </a>
         <ul class="navigation-sub">
           <li class="navigation-item"><NuxtLink :to="switchLocalePath('en')">English</NuxtLink></li>
           <li class="navigation-item"><NuxtLink :to="switchLocalePath('ko')">한국어</NuxtLink></li>

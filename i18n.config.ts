@@ -56,7 +56,7 @@ export default defineI18nConfig(() => ({
         ko: {
             // Home
             'home.intro.title': '안녕하세요! 저는 마르코스라고 합니다.',
-            'home.intro.description': '서울에 거주 중 미국 출신 12년차 서프트웨어 엔저니어입니다. 반갑습니다.',
+            'home.intro.description': '서울에 거주 중 미국 출신 12년차 소프트웨어 엔저니어입니다. 반갑습니다.',
             'home.work.onda.description': '숙박산업의 바른 내일을 제시하는 ONDA.',
             'home.work.onda.role': '시니어 개발자 [2019.05 – 2024.12]',
             'home.work.heartware-korea.description': '마셜 골드스미스(주)의 자회사, 리더십 코칭 솔루션 제작사.',
