@@ -10,7 +10,7 @@
 
     <section class="home-work">
       <div class="container">
-        <h2 class="home-title">Work</h2>
+        <h2 class="home-workTitle">Work</h2>
 
         <div>
           <div class="home-workEntry-alpha">
@@ -62,7 +62,7 @@
 
     <section class="home-skills">
       <div class="container">
-        <h2 class="home-title">Skills</h2>
+        <h2 class="home-workTitle">Skills</h2>
 
         <div class="home-skillEntries">
           <div class="home-skillEntry">

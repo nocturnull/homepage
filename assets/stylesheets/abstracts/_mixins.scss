@@ -2,6 +2,9 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+@use 'sass:string';
+@use 'sass:meta';
+@use 'sass:map';
 @use 'variables';
 
 /// Event wrapper
@@ -42,16 +45,16 @@
 /// @requires $breakpoints
 /// @link https://sass-guidelin.es/#responsive-web-design-and-breakpoints
 @mixin respond-to($breakpoint) {
-  $raw-query: map-get(variables.$breakpoints, $breakpoint);
+  $raw-query: map.get(variables.$breakpoints, $breakpoint);
 
   @if $raw-query {
     $query: if(
-                    type-of($raw-query) == 'string',
-                    unquote($raw-query),
-                    inspect($raw-query)
+                    meta.type-of($raw-query) == 'string',
+                    string.unquote($raw-query),
+                    meta.inspect($raw-query)
     );
 
-    @media #{$query} {
+    @media (width <= #{$query}) {
       @content;
     }
   } @else {

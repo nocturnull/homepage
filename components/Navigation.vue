@@ -13,8 +13,8 @@
       </li>
       <li class="navigation-item">
         <a href="/">
-          <span class="fa-solid fa-globe"></span>
-          Language
+          <span class="fa-solid fa-globe navigation-icon"></span>
+          <span>Language</span>
         </a>
         <ul class="navigation-sub">
           <li class="navigation-item"><NuxtLink :to="switchLocalePath('en')">English</NuxtLink></li>

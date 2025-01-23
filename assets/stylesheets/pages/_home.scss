@@ -1,27 +1,62 @@
-@use '../abstracts/variables' as *;
-@use '../base/helpers';
-@use '../layout/grid';
-
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+@use '../abstracts/variables' as variables;
+@use '../abstracts/mixins' as mixins;
+@use '../base/helpers';
+@use '../layout/grid';
+
 .home-intro {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  background-color: $dark-grey;
+  background-color: variables.$dark-grey;
   min-height: 100vh;
-  color: $light-grey;
+  color: variables.$light-grey;
   align-items: center;
+
+  @include mixins.respond-to('medium') {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(4, 200px);
+    place-items: center;
+  }
 }
 
-.home-title {
+.home-introTitle {
+  grid-column: 3 / span 2;
+
+  @include mixins.respond-to('medium') {
+    grid-column: 1;
+    grid-row: 3 / span 2;
+    padding: 20px;
+  }
+}
+
+.home-introProfile {
+  border-radius: 50%;
+  width: 400px;
+
+  @include mixins.respond-to('medium') {
+    grid-row: 2 / span 1;
+    width: 250px;
+  }
+}
+
+.home-work {
+  background-color: variables.$light-grey;
+  padding-bottom: 50px;
+}
+
+.home-workTitle {
   text-align: center;
   margin: 0;
   height: 120px;
   padding-top: 30px;
 
   &::after {
-    background: $brand-color;
+    background: variables.$brand-color;
     width: 100px;
     height: 0.1em;
     content: '';
@@ -30,35 +65,33 @@
   }
 }
 
-.home-introTitle {
-  grid-column: 3 / span 2;
-}
-
-.home-introProfile {
-  border-radius: 50%;
-  width: 400px;
-}
-
-.home-work {
-  background-color: $light-grey;
-  padding-bottom: 50px;
-}
-
 .home-workEntry {
   width: 100%;
   display: inline-grid;
   gap: 20px;
   align-items: center;
   margin: 20px 0;
+
+  @include mixins.respond-to('medium') {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: [image] 200px [description] auto;
+  }
 }
 
 .home-workEntryRole {
-  color: $mid-grey;
+  color: variables.$mid-grey;
 }
 
 .home-workEntry-alpha {
   @extend .home-workEntry;
   grid-template-columns: [image] 300px [description] auto;
+
+  @include mixins.respond-to('medium') {
+    grid-template-columns: none;
+    justify-items: start;
+    text-align: left;
+  }
 }
 
 .home-workEntry-beta {
@@ -66,6 +99,12 @@
   grid-template-columns: [description] auto [image] 300px;
   justify-items: end;
   text-align: right;
+
+  @include mixins.respond-to('medium') {
+    grid-template-columns: none;
+    justify-items: start;
+    text-align: left;
+  }
 }
 
 .home-workEntryImage {
@@ -73,10 +112,20 @@
   img {
     width: 300px;
   }
+
+  @include mixins.respond-to('medium') {
+    img {
+      width: 200px;
+    }
+  }
 }
 
 .home-workEntryDescription {
   grid-area: description;
+
+  @include mixins.respond-to('medium') {
+    width: 300px;
+  }
 }
 
 .home-skills {
@@ -92,9 +141,13 @@
 .home-skillEntries {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @include mixins.respond-to('medium') {
+    display: block;
+  }
 }
 
 .home-skillEntry {
-  border: 1px solid $mid-grey;
+  border: 1px solid variables.$mid-grey;
   padding: 5px 15px 25px;
 }

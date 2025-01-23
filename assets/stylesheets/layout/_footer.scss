@@ -1,11 +1,12 @@
-@use '../abstracts/variables' as *;
-
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 
+@use '../abstracts/variables' as variables;
+@use '../abstracts/mixins' as mixins;
+
 .footer {
-  background-color: $secondary-color;
+  background-color: variables.$secondary-color;
   color: white;
   min-height: 20vh;
 }
@@ -23,5 +24,11 @@
 
   a:hover {
     text-decoration: none;
+  }
+}
+
+.footer-copyright {
+  @include mixins.respond-to('medium') {
+    padding: 0 20px;
   }
 }
