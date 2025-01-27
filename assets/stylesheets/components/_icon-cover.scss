@@ -1,11 +1,11 @@
-@use '../abstracts/variables' as *;
-
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the icon cover component.
 // -----------------------------------------------------------------------------
 
+@use '../abstracts/variables' as variables;
+
 .icon-cover {
-  background-color: $brand-color;
+  background-color: variables.$brand-color;
   border-radius: 50%;
   width: 40px;
   height: 40px;

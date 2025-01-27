@@ -1,8 +1,9 @@
-@use '../abstracts/variables' as variables;
-
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the work pages.
 // -----------------------------------------------------------------------------
+
+@use '../abstracts/variables' as variables;
+@use '../abstracts/mixins' as mixins;
 
 .work-intro {
   display: grid;
@@ -11,11 +12,20 @@
   min-height: 100vh;
   color: variables.$light-grey;
   place-items: center;
+
+  @include mixins.respond-to('medium') {
+    text-align: center;
+    min-height: 70vh;
+  }
 }
 
 .work-poster {
   grid-row: poster;
   width: 400px;
+
+  @include mixins.respond-to('medium') {
+    width: 200px;
+  }
 }
 
 .work-contents {
@@ -32,8 +42,16 @@
 
 .work-description {
   grid-row: description;
+
+  @include mixins.respond-to('medium') {
+    padding: 10px;
+  }
 }
 
 .work-projectImage {
   max-width: 750px;
+
+  @include mixins.respond-to('medium') {
+    max-width: 250px;
+  }
 }

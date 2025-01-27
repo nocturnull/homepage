@@ -12,7 +12,7 @@
         </ul>
       </li>
       <li class="navigation-item">
-        <a href="/">
+        <a href="/" @click.stop.prevent>
           <span class="fa-solid fa-globe navigation-icon"></span>
           <span>Language</span>
         </a>

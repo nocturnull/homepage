@@ -4,8 +4,6 @@
 
 @use '../abstracts/variables' as variables;
 @use '../abstracts/mixins' as mixins;
-@use '../base/helpers';
-@use '../layout/grid';
 
 .home-intro {
   display: grid;
